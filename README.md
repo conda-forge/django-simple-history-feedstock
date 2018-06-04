@@ -14,12 +14,15 @@ django-simple-history stores Django model state on every create/update/delete.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/django-simple-history-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-simple-history-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/django-simple-history-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/django-simple-history-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-simple-history/badges/version.svg)](https://anaconda.org/conda-forge/django-simple-history)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-simple-history/badges/downloads.svg)](https://anaconda.org/conda-forge/django-simple-history)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-django--simple--history-green.svg)](https://anaconda.org/conda-forge/django-simple-history) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django-simple-history.svg)](https://anaconda.org/conda-forge/django-simple-history) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django-simple-history.svg)](https://anaconda.org/conda-forge/django-simple-history) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django-simple-history.svg)](https://anaconda.org/conda-forge/django-simple-history) |
 
 Installing django-simple-history
 ================================
