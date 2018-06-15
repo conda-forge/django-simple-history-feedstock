@@ -1,6 +1,6 @@
 {% set name = "django-simple-history" %}
-{% set version = "1.9.0" %}
-{% set sha256 = "2faca872d730068025fb19678048d6f3c2de52e0a141189df798a697e67c9886" %}
+{% set version = "2.1.1" %}
+{% set sha256 = "a4cd395e568eb075c61eb4953c6c123402fcc4aa25e25dd7cff1e91ab708eb3f" %}
 
 package:
   name: {{ name|lower }}
