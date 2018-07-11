@@ -1,25 +1,24 @@
 {% set name = "django-simple-history" %}
-{% set version = "2.0" %}
-{% set sha256 = "65de7b13b8df2d0eede3e6c0e2ebec69cb2a1f283109188b7a6c71b4e0d20980" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "f05285a7d9415bd107eda4fd9924598180cce23075466762c3d7430e7522561e" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - django >=1.8
