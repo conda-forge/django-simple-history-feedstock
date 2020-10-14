@@ -5,9 +5,13 @@ Home: https://github.com/treyhunner/django-simple-history
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-simple-history-feedstock/blob/master/LICENSE.txt)
 
 Summary: Store model history and view/revert changes from admin site.
+
+Development: https://github.com/treyhunner/django-simple-history
+
+Documentation: https://django-simple-history.readthedocs.io/
 
 django-simple-history stores Django model state on every create/update/delete.
 
