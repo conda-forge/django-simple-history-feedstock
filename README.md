@@ -1,11 +1,11 @@
-About django-simple-history
-===========================
+About django-simple-history-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-simple-history-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/treyhunner/django-simple-history
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-simple-history-feedstock/blob/main/LICENSE.txt)
 
 Summary: Store model history and view/revert changes from admin site.
 
