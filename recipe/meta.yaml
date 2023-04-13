@@ -1,27 +1,29 @@
 {% set name = "django-simple-history" %}
-{% set version = "2.8.0" %}
-{% set sha256 = "831cfc3f1164627428be3cd38fb7268eb7a979f97f11018e55813a3ce23b1173" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-simple-history-{{ version }}.tar.gz
+  sha256: 2313d2d346f15a1e7a92adb3b6696b226f1cd0c1d920869ec40c4c4076614c41
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.7,<3.12
+    - setuptools-scm
+    - setuptools
     - pip
   run:
-    - python
-    - django >=1.8
+    - python >=3.7,<3.12
+    - django >=3.2,<4.2
+    - setuptools
 
 test:
   imports:
@@ -40,4 +42,5 @@ about:
 extra:
   recipe-maintainers:
     - cshaley
+    - rxm7706
     - sannykr
