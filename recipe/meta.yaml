@@ -16,18 +16,21 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<3.12
+    - python >=3.7
     - setuptools-scm
-    - setuptools
     - pip
   run:
-    - python >=3.7,<3.12
+    - python >=3.7
     - django >=3.2,<4.3
-    - setuptools
 
 test:
   imports:
     - simple_history
+  commands:
+    - pip check
+  requires:
+    - pip
+
 about:
   home: https://github.com/treyhunner/django-simple-history
   license: BSD-3-Clause
