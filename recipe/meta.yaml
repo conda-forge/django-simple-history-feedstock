@@ -1,5 +1,5 @@
 {% set name = "django-simple-history" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-simple-history-{{ version }}.tar.gz
-  sha256: 2313d2d346f15a1e7a92adb3b6696b226f1cd0c1d920869ec40c4c4076614c41
+  sha256: 19bd1a87e1e2eba34dfd43eab1fcf2da5752221f343232f2372b2121c7e3b97d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -37,8 +37,7 @@ about:
   license_family: BSD
   license_file: LICENSE.txt
   summary: 'Store model history and view/revert changes from admin site.'
-  description: 
-    django-simple-history stores Django model state on every create/update/delete.
+  description: django-simple-history stores Django model state on every create/update/delete.
   doc_url: https://django-simple-history.readthedocs.io/
   dev_url: https://github.com/treyhunner/django-simple-history
 
