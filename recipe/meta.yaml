@@ -1,5 +1,5 @@
 {% set name = "django-simple-history" %}
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-simple-history-{{ version }}.tar.gz
-  sha256: 19bd1a87e1e2eba34dfd43eab1fcf2da5752221f343232f2372b2121c7e3b97d
+  sha256: eef2943d7c846270f11c8136f38a3ba00de2bebd7b1b89037de5d9b148ed677a
 
 build:
   noarch: python
